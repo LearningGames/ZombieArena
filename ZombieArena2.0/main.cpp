@@ -26,6 +26,10 @@
 
 using namespace std;
 
+const int bulletsNumber = 100;
+const int numZombies = 3;
+
+
 // Here is a small helper for you! Have a look.
 #include "ResourcePath.hpp"
 
@@ -78,16 +82,14 @@ int main(int, char const**)
     // Create the background
     VertexArray background;
     // Load the texture for our background vertex array
-    // Load the texture for our background vertex array
     Texture textureBackground = TextureHolder::GetTexture("graphics/background_sheet.png");
     
     // Prepare for a horde of zombies
-    int numZombies;
     int numZombiesAlive;
     Zombie* zombies = nullptr;
     
     // 100 bullets should do
-    Bullet bullets[100];
+    Bullet bullets[bulletsNumber];
     int currentBullet = 0;
     int bulletsSpare = 24;
     int bulletsInClip = 6;
@@ -107,6 +109,10 @@ int main(int, char const**)
     // Create a couple of pickups
     Pickup healthPickup(1);
     Pickup ammoPickup(2);
+    
+    // About the game
+    int score = 0;
+    int hiScore = 0;
 
     // Start the game loop
     while (window.isOpen())
@@ -301,9 +307,6 @@ int main(int, char const**)
                 healthPickup.setArena(arena);
                 ammoPickup.setArena(arena);
                 
-                // Create a horde of zombies
-                numZombies = 100;
-                
                 // Delete the previously allocated memory (if it exists)
                 delete[] zombies;
                 zombies = createHorde(numZombies, arena);
@@ -368,6 +371,41 @@ int main(int, char const**)
             // Update the pickups
             healthPickup.update(dtAsSeconds);
             ammoPickup.update(dtAsSeconds);
+            
+            // Collision detection
+            // Have any zombies been shot?
+            for (int i = 0; i < bulletsNumber; i++)
+            {
+                for (int j = 0; j < numZombies; j++)
+                {
+                    if (bullets[i].isInFlight() &&
+                        zombies[j].isAlive())
+                    {
+                        if (bullets[i].getPosition().intersects
+                            (zombies[j].getPosition()))
+                        {
+                            // Stop the bullet
+                            bullets[i].stop();
+                            // Register the hit and see if it was a kill
+                            if (zombies[j].hit())
+                            {
+                                // Not just a hit but a kill too
+                                score += 10;
+                                if (score >= hiScore)
+                                {
+                                    hiScore = score;
+                                }
+                                numZombiesAlive--;
+                                // When all the zombies are dead (again)
+                                if (numZombiesAlive == 0)
+                                {
+                                    state = State::LEVELING_UP;
+                                }
+                            }
+                        }
+                    }
+                }
+            }// End zombie being shot
         }// End updating the scene
         
         /*
