@@ -1,0 +1,436 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04276B191EF714F100230DE7 /* ZombieArena.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04276B171EF714F100230DE7 /* ZombieArena.cpp */; };
+		046561FE1EFF0BC300EF9B65 /* Bullet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 046561FC1EFF0BC300EF9B65 /* Bullet.cpp */; };
+		046562011EFFB81400EF9B65 /* Pickup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 046561FF1EFFB81400EF9B65 /* Pickup.cpp */; };
+		04B80E3D1EE5A0DB00D94711 /* TextureHolder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04B80E3B1EE5A0DB00D94711 /* TextureHolder.cpp */; };
+		04B80E401EE5A15E00D94711 /* Zombie.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04B80E3E1EE5A15E00D94711 /* Zombie.cpp */; };
+		04CA5E2E1EE03F8400F17868 /* ResourcePath.mm in Sources */ = {isa = PBXBuildFile; fileRef = 04CA5E2D1EE03F8400F17868 /* ResourcePath.mm */; };
+		04CA5E311EE03F8400F17868 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04CA5E301EE03F8400F17868 /* main.cpp */; };
+		04CA5E341EE03F8400F17868 /* cute_image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 04CA5E331EE03F8400F17868 /* cute_image.jpg */; };
+		04CA5E361EE03F8400F17868 /* nice_music.ogg in Resources */ = {isa = PBXBuildFile; fileRef = 04CA5E351EE03F8400F17868 /* nice_music.ogg */; };
+		04CA5E381EE03F8400F17868 /* sansation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04CA5E371EE03F8400F17868 /* sansation.ttf */; };
+		04CA5E3A1EE03F8400F17868 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 04CA5E391EE03F8400F17868 /* icon.png */; };
+		04CA5E4F1EE0400C00F17868 /* ammo_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 04CA5E411EE0400C00F17868 /* ammo_icon.png */; };
+		04CA5E501EE0400C00F17868 /* ammo_pickup.png in Resources */ = {isa = PBXBuildFile; fileRef = 04CA5E421EE0400C00F17868 /* ammo_pickup.png */; };
+		04CA5E511EE0400C00F17868 /* background 1280-720.png in Resources */ = {isa = PBXBuildFile; fileRef = 04CA5E431EE0400C00F17868 /* background 1280-720.png */; };
+		04CA5E521EE0400C00F17868 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 04CA5E441EE0400C00F17868 /* background.png */; };
+		04CA5E531EE0400C00F17868 /* background_originalsize.png in Resources */ = {isa = PBXBuildFile; fileRef = 04CA5E451EE0400C00F17868 /* background_originalsize.png */; };
+		04CA5E541EE0400C00F17868 /* background_sheet.png in Resources */ = {isa = PBXBuildFile; fileRef = 04CA5E461EE0400C00F17868 /* background_sheet.png */; };
+		04CA5E551EE0400C00F17868 /* bloater.png in Resources */ = {isa = PBXBuildFile; fileRef = 04CA5E471EE0400C00F17868 /* bloater.png */; };
+		04CA5E561EE0400C00F17868 /* blood.png in Resources */ = {isa = PBXBuildFile; fileRef = 04CA5E481EE0400C00F17868 /* blood.png */; };
+		04CA5E571EE0400C00F17868 /* chaser.png in Resources */ = {isa = PBXBuildFile; fileRef = 04CA5E491EE0400C00F17868 /* chaser.png */; };
+		04CA5E581EE0400C00F17868 /* crawler.png in Resources */ = {isa = PBXBuildFile; fileRef = 04CA5E4A1EE0400C00F17868 /* crawler.png */; };
+		04CA5E591EE0400C00F17868 /* crosshair.png in Resources */ = {isa = PBXBuildFile; fileRef = 04CA5E4B1EE0400C00F17868 /* crosshair.png */; };
+		04CA5E5A1EE0400C00F17868 /* health_pickup.png in Resources */ = {isa = PBXBuildFile; fileRef = 04CA5E4C1EE0400C00F17868 /* health_pickup.png */; };
+		04CA5E5B1EE0400C00F17868 /* player.png in Resources */ = {isa = PBXBuildFile; fileRef = 04CA5E4D1EE0400C00F17868 /* player.png */; };
+		04CA5E5C1EE0400C00F17868 /* sample.png in Resources */ = {isa = PBXBuildFile; fileRef = 04CA5E4E1EE0400C00F17868 /* sample.png */; };
+		04CA5E5F1EE0403800F17868 /* CreateBackground.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04CA5E5D1EE0403800F17868 /* CreateBackground.cpp */; };
+		04CA5E621EE0490E00F17868 /* Player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04CA5E601EE0490E00F17868 /* Player.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		04276B171EF714F100230DE7 /* ZombieArena.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ZombieArena.cpp; sourceTree = "<group>"; };
+		04276B181EF714F100230DE7 /* ZombieArena.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ZombieArena.hpp; sourceTree = "<group>"; };
+		046561FC1EFF0BC300EF9B65 /* Bullet.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Bullet.cpp; sourceTree = "<group>"; };
+		046561FD1EFF0BC300EF9B65 /* Bullet.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Bullet.hpp; sourceTree = "<group>"; };
+		046561FF1EFFB81400EF9B65 /* Pickup.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Pickup.cpp; sourceTree = "<group>"; };
+		046562001EFFB81400EF9B65 /* Pickup.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Pickup.hpp; sourceTree = "<group>"; };
+		04B80E3B1EE5A0DB00D94711 /* TextureHolder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TextureHolder.cpp; sourceTree = "<group>"; };
+		04B80E3C1EE5A0DB00D94711 /* TextureHolder.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = TextureHolder.hpp; sourceTree = "<group>"; };
+		04B80E3E1EE5A15E00D94711 /* Zombie.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Zombie.cpp; sourceTree = "<group>"; };
+		04B80E3F1EE5A15E00D94711 /* Zombie.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Zombie.hpp; sourceTree = "<group>"; };
+		04CA5E281EE03F8400F17868 /* ZombieArena2.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZombieArena2.0.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		04CA5E2C1EE03F8400F17868 /* ZombieArena2.0-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ZombieArena2.0-Info.plist"; sourceTree = "<group>"; };
+		04CA5E2D1EE03F8400F17868 /* ResourcePath.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ResourcePath.mm; sourceTree = "<group>"; };
+		04CA5E2F1EE03F8400F17868 /* ResourcePath.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ResourcePath.hpp; sourceTree = "<group>"; };
+		04CA5E301EE03F8400F17868 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		04CA5E331EE03F8400F17868 /* cute_image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cute_image.jpg; sourceTree = "<group>"; };
+		04CA5E351EE03F8400F17868 /* nice_music.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = nice_music.ogg; sourceTree = "<group>"; };
+		04CA5E371EE03F8400F17868 /* sansation.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = sansation.ttf; sourceTree = "<group>"; };
+		04CA5E391EE03F8400F17868 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		04CA5E411EE0400C00F17868 /* ammo_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ammo_icon.png; sourceTree = "<group>"; };
+		04CA5E421EE0400C00F17868 /* ammo_pickup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ammo_pickup.png; sourceTree = "<group>"; };
+		04CA5E431EE0400C00F17868 /* background 1280-720.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background 1280-720.png"; sourceTree = "<group>"; };
+		04CA5E441EE0400C00F17868 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		04CA5E451EE0400C00F17868 /* background_originalsize.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background_originalsize.png; sourceTree = "<group>"; };
+		04CA5E461EE0400C00F17868 /* background_sheet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background_sheet.png; sourceTree = "<group>"; };
+		04CA5E471EE0400C00F17868 /* bloater.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bloater.png; sourceTree = "<group>"; };
+		04CA5E481EE0400C00F17868 /* blood.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blood.png; sourceTree = "<group>"; };
+		04CA5E491EE0400C00F17868 /* chaser.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chaser.png; sourceTree = "<group>"; };
+		04CA5E4A1EE0400C00F17868 /* crawler.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = crawler.png; sourceTree = "<group>"; };
+		04CA5E4B1EE0400C00F17868 /* crosshair.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = crosshair.png; sourceTree = "<group>"; };
+		04CA5E4C1EE0400C00F17868 /* health_pickup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = health_pickup.png; sourceTree = "<group>"; };
+		04CA5E4D1EE0400C00F17868 /* player.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = player.png; sourceTree = "<group>"; };
+		04CA5E4E1EE0400C00F17868 /* sample.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sample.png; sourceTree = "<group>"; };
+		04CA5E5D1EE0403800F17868 /* CreateBackground.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CreateBackground.cpp; sourceTree = "<group>"; };
+		04CA5E5E1EE0403800F17868 /* CreateBackground.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CreateBackground.hpp; sourceTree = "<group>"; };
+		04CA5E601EE0490E00F17868 /* Player.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Player.cpp; sourceTree = "<group>"; };
+		04CA5E611EE0490E00F17868 /* Player.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Player.hpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04CA5E241EE03F8400F17868 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04B80E411EE5A16300D94711 /* Zombie */ = {
+			isa = PBXGroup;
+			children = (
+				04B80E3E1EE5A15E00D94711 /* Zombie.cpp */,
+				04B80E3F1EE5A15E00D94711 /* Zombie.hpp */,
+			);
+			name = Zombie;
+			sourceTree = "<group>";
+		};
+		04CA5E1E1EE03F8400F17868 = {
+			isa = PBXGroup;
+			children = (
+				04CA5E2A1EE03F8400F17868 /* ZombieArena2.0 */,
+				04CA5E291EE03F8400F17868 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		04CA5E291EE03F8400F17868 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04CA5E281EE03F8400F17868 /* ZombieArena2.0.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04CA5E2A1EE03F8400F17868 /* ZombieArena2.0 */ = {
+			isa = PBXGroup;
+			children = (
+				04B80E411EE5A16300D94711 /* Zombie */,
+				04CA5E631EE0491400F17868 /* Player */,
+				04CA5E401EE0400C00F17868 /* graphics */,
+				04CA5E2D1EE03F8400F17868 /* ResourcePath.mm */,
+				04CA5E2F1EE03F8400F17868 /* ResourcePath.hpp */,
+				04CA5E301EE03F8400F17868 /* main.cpp */,
+				04CA5E321EE03F8400F17868 /* Resources */,
+				04CA5E2B1EE03F8400F17868 /* Supporting Files */,
+				04CA5E5D1EE0403800F17868 /* CreateBackground.cpp */,
+				04CA5E5E1EE0403800F17868 /* CreateBackground.hpp */,
+				04B80E3B1EE5A0DB00D94711 /* TextureHolder.cpp */,
+				04B80E3C1EE5A0DB00D94711 /* TextureHolder.hpp */,
+				04276B171EF714F100230DE7 /* ZombieArena.cpp */,
+				04276B181EF714F100230DE7 /* ZombieArena.hpp */,
+				046561FC1EFF0BC300EF9B65 /* Bullet.cpp */,
+				046561FD1EFF0BC300EF9B65 /* Bullet.hpp */,
+				046561FF1EFFB81400EF9B65 /* Pickup.cpp */,
+				046562001EFFB81400EF9B65 /* Pickup.hpp */,
+			);
+			path = ZombieArena2.0;
+			sourceTree = "<group>";
+		};
+		04CA5E2B1EE03F8400F17868 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				04CA5E2C1EE03F8400F17868 /* ZombieArena2.0-Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		04CA5E321EE03F8400F17868 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				04CA5E331EE03F8400F17868 /* cute_image.jpg */,
+				04CA5E351EE03F8400F17868 /* nice_music.ogg */,
+				04CA5E371EE03F8400F17868 /* sansation.ttf */,
+				04CA5E391EE03F8400F17868 /* icon.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		04CA5E401EE0400C00F17868 /* graphics */ = {
+			isa = PBXGroup;
+			children = (
+				04CA5E411EE0400C00F17868 /* ammo_icon.png */,
+				04CA5E421EE0400C00F17868 /* ammo_pickup.png */,
+				04CA5E431EE0400C00F17868 /* background 1280-720.png */,
+				04CA5E441EE0400C00F17868 /* background.png */,
+				04CA5E451EE0400C00F17868 /* background_originalsize.png */,
+				04CA5E461EE0400C00F17868 /* background_sheet.png */,
+				04CA5E471EE0400C00F17868 /* bloater.png */,
+				04CA5E481EE0400C00F17868 /* blood.png */,
+				04CA5E491EE0400C00F17868 /* chaser.png */,
+				04CA5E4A1EE0400C00F17868 /* crawler.png */,
+				04CA5E4B1EE0400C00F17868 /* crosshair.png */,
+				04CA5E4C1EE0400C00F17868 /* health_pickup.png */,
+				04CA5E4D1EE0400C00F17868 /* player.png */,
+				04CA5E4E1EE0400C00F17868 /* sample.png */,
+			);
+			path = graphics;
+			sourceTree = "<group>";
+		};
+		04CA5E631EE0491400F17868 /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				04CA5E601EE0490E00F17868 /* Player.cpp */,
+				04CA5E611EE0490E00F17868 /* Player.hpp */,
+			);
+			name = Player;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		04CA5E271EE03F8400F17868 /* ZombieArena2.0 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04CA5E3D1EE03F8400F17868 /* Build configuration list for PBXNativeTarget "ZombieArena2.0" */;
+			buildPhases = (
+				04CA5E231EE03F8400F17868 /* Sources */,
+				04CA5E241EE03F8400F17868 /* Frameworks */,
+				04CA5E251EE03F8400F17868 /* Resources */,
+				04CA5E261EE03F8400F17868 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZombieArena2.0;
+			productName = ZombieArena2.0;
+			productReference = 04CA5E281EE03F8400F17868 /* ZombieArena2.0.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		04CA5E1F1EE03F8400F17868 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Albert Alma";
+				TargetAttributes = {
+					04CA5E271EE03F8400F17868 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 04CA5E221EE03F8400F17868 /* Build configuration list for PBXProject "ZombieArena2.0" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 04CA5E1E1EE03F8400F17868;
+			productRefGroup = 04CA5E291EE03F8400F17868 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04CA5E271EE03F8400F17868 /* ZombieArena2.0 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		04CA5E251EE03F8400F17868 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04CA5E3A1EE03F8400F17868 /* icon.png in Resources */,
+				04CA5E571EE0400C00F17868 /* chaser.png in Resources */,
+				04CA5E541EE0400C00F17868 /* background_sheet.png in Resources */,
+				04CA5E521EE0400C00F17868 /* background.png in Resources */,
+				04CA5E591EE0400C00F17868 /* crosshair.png in Resources */,
+				04CA5E5A1EE0400C00F17868 /* health_pickup.png in Resources */,
+				04CA5E501EE0400C00F17868 /* ammo_pickup.png in Resources */,
+				04CA5E4F1EE0400C00F17868 /* ammo_icon.png in Resources */,
+				04CA5E381EE03F8400F17868 /* sansation.ttf in Resources */,
+				04CA5E5B1EE0400C00F17868 /* player.png in Resources */,
+				04CA5E551EE0400C00F17868 /* bloater.png in Resources */,
+				04CA5E5C1EE0400C00F17868 /* sample.png in Resources */,
+				04CA5E531EE0400C00F17868 /* background_originalsize.png in Resources */,
+				04CA5E561EE0400C00F17868 /* blood.png in Resources */,
+				04CA5E511EE0400C00F17868 /* background 1280-720.png in Resources */,
+				04CA5E361EE03F8400F17868 /* nice_music.ogg in Resources */,
+				04CA5E581EE0400C00F17868 /* crawler.png in Resources */,
+				04CA5E341EE03F8400F17868 /* cute_image.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		04CA5E261EE03F8400F17868 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# This shell script simply copies required SFML dylibs/frameworks into the application bundle frameworks folder.\n# If you're using static libraries (which is not recommended) you should remove this script from your project.\n\n# SETTINGS\nCMAKE_INSTALL_FRAMEWORK_PREFIX=\"/Library/Frameworks\"\nCMAKE_INSTALL_LIB_PREFIX=\"/usr/local/lib\"\nFRAMEWORKS_FULL_PATH=\"$BUILT_PRODUCTS_DIR/$FRAMEWORKS_FOLDER_PATH/\"\n\n# Are we building a project that uses frameworks or dylibs?\ncase \"$SFML_BINARY_TYPE\" in\n    DYLIBS)\n        frameworks=\"false\"\n        ;;\n    *)\n        frameworks=\"true\"\n        ;;\nesac\n\n# Echoes to stderr\nerror () # $* message to display\n{\n    echo $* 1>&2\n    exit 2\n}\n\nassert () # $1 is a boolean, $2...N is an error message\n{\n    if [ $# -lt 2 ]\n    then\n        error \"Internal error in assert: not enough args\"\n    fi\n\n    if [ $1 -ne 0 ]\n    then\n        shift\n        error \"$*\"\n    fi\n}\n\nforce_remove () # $@ is some paths\n{\n    test $# -ge 1\n    assert $? \"force_remove() requires at least one parameter\"\n    rm -fr $@\n    assert $? \"couldn't remove $@\"\n}\n\ncopy () # $1 is a source, $2 is a destination\n{\n    test $# -eq 2\n    assert $? \"copy() requires two parameters\"\n    ditto \"$1\" \"$2\"\n    assert $? \"couldn't copy $1 to $2\"\n}\n\nrequire () # $1 is a SFML module like 'system' or 'audio'\n{\n    dest=\"$BUILT_PRODUCTS_DIR/$FRAMEWORKS_FOLDER_PATH/\"\n\n    if [ -z \"$1\" ]\n    then\n        error \"require() requires one parameter!\"\n    else\n        # clean potentially old stuff\n        force_remove \"$dest/libsfml-$1\"*\n        force_remove \"$dest/sfml-$1.framework\"\n\n        # copy SFML libraries\n        if [ \"$frameworks\" = \"true\" ]\n        then\n            source=\"$CMAKE_INSTALL_FRAMEWORK_PREFIX/sfml-$1.framework\"\n            target=\"sfml-$1.framework\"\n        elif [ \"$SFML_LINK_DYLIBS_SUFFIX\" = \"-d\" ]\n        then\n            source=\"$CMAKE_INSTALL_LIB_PREFIX/libsfml-$1-d.dylib\"\n            target=\"`readlink $source`\"\n        else\n            source=\"$CMAKE_INSTALL_LIB_PREFIX/libsfml-$1.dylib\"\n            target=\"`readlink $source`\"\n        fi\n\n        copy \"$source\" \"$dest/$target\"\n\n        # copy extra dependencies\n        if [ \"$1\" = \"audio\" ]\n        then\n            # copy \"FLAC\" \"ogg\" \"vorbis\" \"vorbisenc\" \"vorbisfile\" \"OpenAL\" frameworks too\n            for f in \"FLAC\" \"ogg\" \"vorbis\" \"vorbisenc\" \"vorbisfile\" \"OpenAL\"\n            do\n                copy \"$CMAKE_INSTALL_FRAMEWORK_PREFIX/$f.framework\" \"$dest/$f.framework\"\n            done\n        elif [ \"$1\" = \"graphics\" ]\n        then\n            copy \"$CMAKE_INSTALL_FRAMEWORK_PREFIX/freetype.framework\" \"$dest/freetype.framework\"\n        fi\n    fi\n}\n\nif [ -n \"$SFML_SYSTEM\" ]\nthen\n    require \"system\"\nfi\n\nif [ -n \"$SFML_AUDIO\" ]\nthen\n    require \"audio\"\nfi\n\nif [ -n \"$SFML_NETWORK\" ]\nthen\n    require \"network\"\nfi\n\nif [ -n \"$SFML_WINDOW\" ]\nthen\n    require \"window\"\nfi\n\nif [ -n \"$SFML_GRAPHICS\" ]\nthen\n    require \"graphics\"\nfi\n\n                ";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04CA5E231EE03F8400F17868 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04CA5E621EE0490E00F17868 /* Player.cpp in Sources */,
+				04276B191EF714F100230DE7 /* ZombieArena.cpp in Sources */,
+				04B80E401EE5A15E00D94711 /* Zombie.cpp in Sources */,
+				046561FE1EFF0BC300EF9B65 /* Bullet.cpp in Sources */,
+				04CA5E311EE03F8400F17868 /* main.cpp in Sources */,
+				04CA5E2E1EE03F8400F17868 /* ResourcePath.mm in Sources */,
+				046562011EFFB81400EF9B65 /* Pickup.cpp in Sources */,
+				04CA5E5F1EE0403800F17868 /* CreateBackground.cpp in Sources */,
+				04B80E3D1EE5A0DB00D94711 /* TextureHolder.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		04CA5E3B1EE03F8400F17868 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				FRAMEWORK_SEARCH_PATHS = (
+					/Library/Frameworks/,
+					"$(inherited)",
+				);
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include/,
+					"$(inherited)",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib/,
+					"$(inherited)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"$(SFML_SYSTEM)",
+					"$(SFML_WINDOW)",
+					"$(SFML_GRAPHICS)",
+					"$(SFML_AUDIO)",
+					"$(SFML_NETWORK)",
+				);
+				SFML_AUDIO = "$(SFML_LINK_PREFIX) sfml-audio$(SFML_LINK_SUFFIX)";
+				SFML_BINARY_TYPE = FRAMEWORKS;
+				SFML_GRAPHICS = "$(SFML_LINK_PREFIX) sfml-graphics$(SFML_LINK_SUFFIX)";
+				SFML_LINK_DYLIBS_PREFIX = "-l";
+				SFML_LINK_DYLIBS_SUFFIX = "";
+				SFML_LINK_FRAMEWORKS_PREFIX = "-framework";
+				SFML_LINK_FRAMEWORKS_SUFFIX = "";
+				SFML_LINK_PREFIX = "$(SFML_LINK_$(SFML_BINARY_TYPE)_PREFIX)";
+				SFML_LINK_SUFFIX = "$(SFML_LINK_$(SFML_BINARY_TYPE)_SUFFIX)";
+				SFML_NETWORK = "$(SFML_LINK_PREFIX) sfml-network$(SFML_LINK_SUFFIX)";
+				SFML_SYSTEM = "$(SFML_LINK_PREFIX) sfml-system$(SFML_LINK_SUFFIX)";
+				SFML_WINDOW = "$(SFML_LINK_PREFIX) sfml-window$(SFML_LINK_SUFFIX)";
+				SUPPORTED_PLATFORMS = macosx;
+			};
+			name = Debug;
+		};
+		04CA5E3C1EE03F8400F17868 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				FRAMEWORK_SEARCH_PATHS = (
+					/Library/Frameworks/,
+					"$(inherited)",
+				);
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include/,
+					"$(inherited)",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib/,
+					"$(inherited)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"$(SFML_SYSTEM)",
+					"$(SFML_WINDOW)",
+					"$(SFML_GRAPHICS)",
+					"$(SFML_AUDIO)",
+					"$(SFML_NETWORK)",
+				);
+				SFML_AUDIO = "$(SFML_LINK_PREFIX) sfml-audio$(SFML_LINK_SUFFIX)";
+				SFML_BINARY_TYPE = FRAMEWORKS;
+				SFML_GRAPHICS = "$(SFML_LINK_PREFIX) sfml-graphics$(SFML_LINK_SUFFIX)";
+				SFML_LINK_DYLIBS_PREFIX = "-l";
+				SFML_LINK_DYLIBS_SUFFIX = "";
+				SFML_LINK_FRAMEWORKS_PREFIX = "-framework";
+				SFML_LINK_FRAMEWORKS_SUFFIX = "";
+				SFML_LINK_PREFIX = "$(SFML_LINK_$(SFML_BINARY_TYPE)_PREFIX)";
+				SFML_LINK_SUFFIX = "$(SFML_LINK_$(SFML_BINARY_TYPE)_SUFFIX)";
+				SFML_NETWORK = "$(SFML_LINK_PREFIX) sfml-network$(SFML_LINK_SUFFIX)";
+				SFML_SYSTEM = "$(SFML_LINK_PREFIX) sfml-system$(SFML_LINK_SUFFIX)";
+				SFML_WINDOW = "$(SFML_LINK_PREFIX) sfml-window$(SFML_LINK_SUFFIX)";
+				SUPPORTED_PLATFORMS = macosx;
+			};
+			name = Release;
+		};
+		04CA5E3E1EE03F8400F17868 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "ZombieArena2.0/ZombieArena2.0-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		04CA5E3F1EE03F8400F17868 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "ZombieArena2.0/ZombieArena2.0-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04CA5E221EE03F8400F17868 /* Build configuration list for PBXProject "ZombieArena2.0" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04CA5E3B1EE03F8400F17868 /* Debug */,
+				04CA5E3C1EE03F8400F17868 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04CA5E3D1EE03F8400F17868 /* Build configuration list for PBXNativeTarget "ZombieArena2.0" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04CA5E3E1EE03F8400F17868 /* Debug */,
+				04CA5E3F1EE03F8400F17868 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 04CA5E1F1EE03F8400F17868 /* Project object */;
+}
